@@ -1,4 +1,4 @@
-package com.fis.zti.example.examples;
+package com.fis.zti.example.examples.example1;
 
 import com.fis.zti.example.config.AppConfig;
 import com.fis.zti.example.invoice.Invoice;
@@ -42,6 +42,5 @@ public class Example1 {
         for (var i:inv) {
             System.out.println(i);
         }
-
     }
 }

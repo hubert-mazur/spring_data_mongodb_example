@@ -1,31 +1,28 @@
-package com.fis.zti.example.invoice;
+package com.fis.zti.example.examples.example3;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.math.BigInteger;
 import java.util.Date;
 
-@Document(collection = "my_collection_name")
-@TypeAlias("inv")
-public class Invoice {
-    @Id
-    String id;
+@Document
+public class InvoiceStringBigIntegerType {
+    BigInteger id;
     @Field
     Date date;
     @Field
     Double net;
 
-    public Invoice(Date date, Double net) {
+    public InvoiceStringBigIntegerType(Date date, Double net) {
         this.date = date;
         this.net = net;
     }
 
-    public Invoice() {
+    public InvoiceStringBigIntegerType() {
     }
 
-    public String getId() {
+    public BigInteger getId() {
         return id;
     }
 
