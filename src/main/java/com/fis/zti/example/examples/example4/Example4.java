@@ -67,8 +67,6 @@ public class Example4 {
         for (Invoice i:listOfInvoices) {
             System.out.println(i);
         }
-
-
     }
 
 

@@ -1,17 +1,14 @@
 package com.fis.zti.example.examples.example5;
 
-import org.springframework.context.ApplicationContext;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 public class Example5 {
 
-    public Example5(ApplicationContext applicationContext) {
+    public Example5(PersonService service) {
 
-        PersonService personService = applicationContext.getBean(PersonService.class);
+        PersonService personService = service;
         PersonRepository personRepository = personService.getPersonRepository();
 
         personRepository.deleteAll();
